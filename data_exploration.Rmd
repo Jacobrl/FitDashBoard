@@ -1,0 +1,34 @@
+---
+title: "data_exploration"
+output: html_document
+date: "2024-05-27"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Loading in all the data files
+
+```{r loading-in-data}
+daily_act <- read.csv("dailyActivity_merged.csv")
+heartrate_sec <- read.csv("heartrate_seconds_merged.csv")
+hourly_Cal <- read.csv("hourlyCalories_merged.csv")
+hourly_Int <- read.csv("hourlyIntensities_merged.csv")
+hourly_Step <- read.csv("hourlySteps_merged.csv")
+min_Cal <- read.csv("minuteCaloriesNarrow_merged.csv")
+min_Int <- read.csv("minuteIntensitiesNarrow_merged.csv")
+min_METs <- read.csv("minuteMETsNarrow_merged.csv")
+min_Sleep <- read.csv("minuteSleep_merged.csv")
+weight_Log <- read.csv("weightLogInfo_merged.csv")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
