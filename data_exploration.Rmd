@@ -1,34 +1,122 @@
 ---
-title: "data_exploration"
-output: html_document
+title: "Data Exploration"
+output:
+  pdf_document: default
+  word_document: default
 date: "2024-05-27"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(tidyverse)
 ```
 
-Loading in all the data files
+```{r loading-in-data, echo = FALSE}
+# Loading in all the data files
 
-```{r loading-in-data}
-daily_act <- read.csv("dailyActivity_merged.csv")
-heartrate_sec <- read.csv("heartrate_seconds_merged.csv")
-hourly_Cal <- read.csv("hourlyCalories_merged.csv")
-hourly_Int <- read.csv("hourlyIntensities_merged.csv")
-hourly_Step <- read.csv("hourlySteps_merged.csv")
-min_Cal <- read.csv("minuteCaloriesNarrow_merged.csv")
-min_Int <- read.csv("minuteIntensitiesNarrow_merged.csv")
-min_METs <- read.csv("minuteMETsNarrow_merged.csv")
-min_Sleep <- read.csv("minuteSleep_merged.csv")
-weight_Log <- read.csv("weightLogInfo_merged.csv")
+daily_act <- read.csv("Fitabase_Data_3.12.16-4.11.16/dailyActivity_merged.csv")
+heartrate_sec <- read.csv("Fitabase_Data_3.12.16-4.11.16/heartrate_seconds_merged.csv")
+hourly_Cal <- read.csv("Fitabase_Data_3.12.16-4.11.16/hourlyCalories_merged.csv")
+hourly_Int <- read.csv("Fitabase_Data_3.12.16-4.11.16/hourlyIntensities_merged.csv")
+hourly_Step <- read.csv("Fitabase_Data_3.12.16-4.11.16/hourlySteps_merged.csv")
+min_Cal <- read.csv("Fitabase_Data_3.12.16-4.11.16/minuteCaloriesNarrow_merged.csv")
+min_Int <- read.csv("Fitabase_Data_3.12.16-4.11.16/minuteIntensitiesNarrow_merged.csv")
+min_METs <- read.csv("Fitabase_Data_3.12.16-4.11.16/minuteMETsNarrow_merged.csv")
+min_Sleep <- read.csv("Fitabase_Data_3.12.16-4.11.16/minuteSleep_merged.csv")
+min_Step <- read.csv("Fitabase_Data_3.12.16-4.11.16/minuteStepsNarrow_merged.csv")
+weight_Log <- read.csv("Fitabase_Data_3.12.16-4.11.16/weightLogInfo_merged.csv")
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r row-col-datasets, echo=FALSE}
+# Initial data exploration each data set
+# counting the numbers of rows and columns in each variable containing the dataset
+# daily_act
+nrow_daily_act <- nrow(daily_act)
+ncol_daily_act <- ncol(daily_act)
+uniqueId_daily_act <- length(unique(daily_act$Id))
+# heartrate_sec
+nrow_heartrate_sec <- nrow(heartrate_sec)
+ncol_heartrate_sec <- ncol(heartrate_sec)
+uniqueId_heartrate_sec <- length(unique(heartrate_sec$Id))
+# hourly_Cal
+nrow_hourly_Cal <- nrow(hourly_Cal)
+ncol_hourly_Cal <- ncol(hourly_Cal)
+uniqueId_hourly_Cal <- length(unique(hourly_Cal$Id))
+# hourly_Int
+nrow_hourly_Int <- nrow(hourly_Int)
+ncol_hourly_Int <- ncol(hourly_Int)
+uniqueId_hourly_Int <- length(unique(hourly_Int$Id))
+# hourly_Step
+nrow_hourly_Step <- nrow(hourly_Step)
+ncol_hourly_Step <- ncol(hourly_Step)
+uniqueId_hourly_Step <- length(unique(hourly_Step$Id))
+# min_Cal
+nrow_min_Cal <- nrow(min_Cal)
+ncol_min_Cal <- ncol(min_Cal)
+uniqueId_min_Cal <- length(unique(min_Cal$Id))
+# min_Int
+nrow_min_Int <- nrow(min_Int)
+ncol_min_Int <- ncol(min_Int)
+uniqueId_min_Int <- length(unique(min_Int$Id))
+# min_METs
+nrow_min_METs <- nrow(min_METs)
+ncol_min_METs <- ncol(min_METs)
+id_min_METs <- length(unique(min_METs$Id))
+# min_Sleep
+nrow_min_Sleep <- nrow(min_Sleep)
+ncol_min_Sleep <- ncol(min_Sleep)
+uniqueId_min_Sleep <- length(unique(min_Sleep$Id))
+# min_Step
+nrow_min_Step <- nrow(min_Step)
+ncol_min_Step <- ncol(min_Step)
+uniqueId_min_Step <- length(unique(min_Step$Id))
+# weight_Log
+nrow_weight_Log <- nrow(weight_Log)
+ncol_weight_Log <- ncol(weight_Log)
+uniqueId_weight_Log <- length(unique(weight_Log$Id))
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+The following are number of rows and columns present in the data sets found in "Fitabase_Data_3.12.16-4.11.16" folder.
+
+1.  In the data set, dailyAcvivity_merged.csv there are `r nrow_daily_act` rows, `r ncol_daily_act` columns, and `r uniqueId_daily_act` unique users.
+
+2.  In the data set, heartrate_seconds_merged.csv there are `r nrow_heartrate_sec` rows, `r ncol_heartrate_sec` columns and `r uniqueId_heartrate_sec` unique users.
+
+3.  In the data set, hourlyCalories_merged.csv there are `r nrow_hourly_Cal` rows, `r ncol_hourly_Cal` columns, and `r uniqueId_hourly_Cal` unique users.
+
+4.  In the data set, hourlyIntensities_merged.csv there are `r nrow_hourly_Int` rows, `r ncol_hourly_Int` columns, and `r uniqueId_hourly_Int` unique users.
+
+5.  In the data set, hourlySteps_merged.csv there are `r nrow_hourly_Step` rows, `r ncol_hourly_Step` columns, and `r uniqueId_hourly_Step` unique users.
+
+6.  In the data set, minuteCaloriesNarrow_merged.csv there are `r nrow_min_Cal` rows, `r ncol_min_Cal` columns, and `r uniqueId_min_Cal` unique users.
+
+7.  In the data set, minuteIntensitiesNarrow_merged.csv there are `r nrow_min_Int` rows, `r ncol_min_Int` columns, and `r uniqueId_min_Int` unique users.
+
+8.  In the data set, minuteMETsNarrow_merged.csv there are `r nrow_min_METs` rows, `r ncol_min_METs` columns, and `r id_min_METs` unique users.
+
+9.  In the data set, minuteSleep_merged.csv there are `r nrow_min_Sleep` rows, `r ncol_min_Sleep` columns, and `r uniqueId_min_Sleep` unique users.
+
+10. In the data set, minuteStepsNarrow_merged.csv there are `r nrow_min_Step` rows, `r ncol_min_Step` columns, and `r uniqueId_min_Step` unique users.
+
+11. In the data set, weightLogInfo_merged.csv there are `r nrow_weight_Log` rows, `r ncol_weight_Log` columns, and `r uniqueId_weight_Log` unique users.
+
+```{r visual-one}
+
+head(daily_act)
+
+data_dailySteps <- daily_act |>
+  group_by(Id, ActivityDate) |>
+  filter(Id == 1503960366) |>
+  summarise(steps_per_day = sum(TotalSteps))
+
+data_dailySteps |>
+  ggplot(aes(x = ActivityDate, y = steps_per_day)) +
+  geom_line(aes(group = 1)) +
+  geom_point() +
+  labs(title = "Steps Between March 25th to April 9th",
+      x = "Date (March 25th to April 9th)",
+      y = "Steps") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+```
