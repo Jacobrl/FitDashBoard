@@ -1,0 +1,59 @@
+---
+title: "User Interview"
+output: pdf_document
+date: "2024-05-29"
+---
+
+# What is a Fitbit?
+
+A Fitbit is technology that tracks an user's every day physical health and bodily health. Fitbit comes as a physical wearable device that an user can wear along with an digital app to sync and record the data from the wearable device. Current forms of monitoring is free and accessible to all users; if users want to gain additional analytics or insights, they can pay a premium price to access more information. In addition to premium access to analytics or insight, some digital apps offer nutritional information and on-phone workout videos from professional fitness trainer ([https://www.womanandhome.com/health-and-wellbeing/how-to-set-up-a-fitbit-a-guide-206915/#:\~:text=A%20Fitbit%20will%20automatically%20track,to%20download%20the%20Fitbit%20app.](https://www.womanandhome.com/health-and-wellbeing/how-to-set-up-a-fitbit-a-guide-206915/#:~:text=A%20Fitbit%20will%20automatically%20track,to%20download%20the%20Fitbit%20app.)).
+
+# Why would a stakeholder use a Fitbit?
+
+1.  Quality of life improvements via increaseing physical activities --- The stakeholder within this category are individuals with no or minimum experience in the gym who wants to reduce bad habits, build good habits, and sustain them in a busy environment with a Fitbit. On websites like reddit where users under r/Fitbit speak from personal anecdotes, the sentiment of lifestyle improvement and addressing laziness are key reasons to buy a Fitbit ([https://www.reddit.com/r/Fitbit/comments/c7tqk7/im_new_can_someone_explain_to_me_what_the_point/](https://www.reddit.com/r/fitbit/comments/c7tqk7/im_new_can_someone_explain_to_me_what_the_point/)).
+
+2.   Tracking sleep --- Users who use Fitbit uses it to track overall trends or patterns in their sleep. However, professionals advise against using Fitbit to track the quality of sleep as the metrics and algorithm used in a Fitbit does not track REM or non-REM stages of sleeping. The technology fails to recgonize that everyone's sleeping patterns and habits may vary from the general public. For instance, an individual with a sleeping disorder has a different sleeping habit from the general population which the Fitbit fail to track. Stockholders may not have access to technology and professionals capable of performing a pornographically (PSG), a test used to diagnose sleeping disorder, opting for a more affordable alternative using a Fitbit. (**READ ARTICLE TO VERIFY THIS** [https://www.internationalsleepcharity.org/blog/what-i-learned-from-tracking-my-sleep-with-Fitbit-for-two-months](https://www.internationalsleepcharity.org/blog/what-i-learned-from-tracking-my-sleep-with-fitbit-for-two-months))
+
+3.  Tracking calories --- A feature of Fitbit is to track calories burned. An application of the feature is managing weight loss. At the core of losing weight, an individual has to manage calories. Fitbit tracks calories by using basal metabolic rate combined withe personal information such as height, weight, sex, and age (<https://www.androidauthority.com/fitbit-calories-burned-3270477/>). A stakeholder of Fitbit may use the feature to manage weight loss via tracking calories since the technology is tailored towards the stakeholder. Fitbit is useful when comparing data (not limited to calories) between the present and yesterday, last week, last month or last year (<https://www.aber.ac.uk/en/news/archive/2019/01/title-220012-en.html>).
+
+4.  Tracking heart-rate --- Tracking one's heart rate has numerous benefits to monitor any irregular activities. Stakeholders who use Fitbit has the ability to regularly check their heart rate and identify the state of their physical and emotional health (i.e. stress levels, hydration or fitness level) . High resting heart rate may raise concerns for stakeholders and notify them of irregular activities in their heart. (<https://www.sutterhealth.org/health/heart/get-to-know-your-heart-rate-it-might-save-your-life#:~:text=Keeping%20track%20of%20your%20heart,dehydration%2C%20inactivity%20and%20persistent%20stress.>)
+
+With the reasons above in mind, it is crucial to conduct interviews to see how an average user (stakeholder) who uses Fitbit from the general population uses Fitbit. The goal of the interviews is to better understand what information truly matters to an user of the technology.
+
+# Interview Questions
+
+1.  What is important to your physical health when you are in a stressful environment?
+
+2.  How would do you keep a record of your daily physical activities?
+
+3.  What is your sleeping patterns?
+
+4.  How would you like to keep track of your sleeping patterns?
+
+5.  Would you like to observe sleeping patterns and find ways to improve your sleeping habits? If not, please explain why?
+
+6.  Would you like to be constantly reminded of how many calories you burn?
+
+7.  Does knowing your heart rate at all times matter to you?
+
+8.  Have you ever used a Fitbit before? If so, what was the experience?
+
+9.  Have you ever shown information from your Fitbit to a medical practitioner? If so, why?
+
+# Work Citation (MLA 8)
+
+**NOTE:** Due to R markdown file formatting and syntax proper MLA syntax can not be achieved.
+
+\"Home.\" *Get to Know Your Heart Rate: It Might Save Your Life*, www.sutterhealth.org/health/heart/get-to-know-your-heart-rate-it-might-save-your-life#:\~:text=Keeping%20track%20of%20your%20heart,dehydration%2C%20inactivity%20and%20persistent%20stress. Accessed 30 May 2024.
+
+Imperial, Sleep. \"What I Learned from Tracking My Sleep with Fitbit for Two Months.\" *International Sleep Charity*, 27 June 2020, www.internationalsleepcharity.org/blog/what-i-learned-from-tracking-my-sleep-with-fitbit-for-two-months. Accessed 29 May 2024.
+
+\"Is Your Fitbit Actually Counting Calories Correctly?\" *Android Authority*, 17 May 2023, www.androidauthority.com/fitbit-calories-burned-3270477/. Accessed 30 May 2024.
+
+Lim, Su Eun, et al. \"Fitbit Inspire 2TM against Polysomnography in Adults: NSS.\" *Nature and Science of Sleep*, Dove Press, 28 Feb. 2023, www.dovepress.com/validation-of-fitbit-inspire-2tm-against-polysomnography-in-adults-con-peer-reviewed-fulltext-article-NSS#:\~:text=The%20sensitivity%20and%20specificity%20of,%25%2C%20respectively%20for%20REM%20sleep. Accessed 30 May 2024.
+
+Lim, Su Eun, et al. \"Fitbit Inspire 2TM against Polysomnography in Adults: NSS.\" *Nature and Science of Sleep*, Dove Press, 28 Feb. 2023, www.dovepress.com/validation-of-fitbit-inspire-2tm-against-polysomnography-in-adults-con-peer-reviewed-fulltext-article-NSS#:\~:text=The%20sensitivity%20and%20specificity%20of,%25%2C%20respectively%20for%20REM%20sleep. Accessed 30 May 2024.
+
+*R/Fitbit on Reddit: I\'m New. Can Someone Explain to Me What the Point of a Fitbit Is?*, www.reddit.com/r/fitbit/comments/c7tqk7/im_new_can_someone_explain_to_me_what_the_point/. Accessed 29 May 2024.
+
+Walsh, Grace. \"What Is a Fitbit and How Does It Work? Plus, Everything You Need to Know about Setting up Your Device.\" *Woman and Home Magazine*, Woman & Home, 14 Oct. 2022, www.womanandhome.com/health-and-wellbeing/how-to-set-up-a-fitbit-a-guide-206915/#:\~:text=A%20Fitbit%20will%20automatically%20track,to%20download%20the%20Fitbit%20app. Accessed 30 May 2024.
