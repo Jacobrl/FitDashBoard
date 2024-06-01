@@ -28,15 +28,27 @@ With the reasons above in mind, it is crucial to conduct interviews to see how a
 
 The project FitDashBoard aims to explore a better way of representing and inform an user's physical, mental, and emotional health. The project's end-goal is to produce a dashboard that helps users who are using or have used Fitbit (or similar devices) to better understand and communicate a user's health.
 
-To better understand users of this technology, the interviewer will ask a series of questions start with demographic information, Fitbit usage, and the physical and mental health. To promote transparency within the data science community, the project, interview, and data will be publicly available online via GitHub. Questions related to demographic information can be completely anonymous such as name, age, occupation, level of physical activity, and disability status. The interview should take no longer then 45 minutes.
+To better understand users of this technology, the interviewer will ask a series of questions starting with demographic information, Fitbit usage, and physical and mental health. To promote transparency within the data science community, the project, interview, and data will be publicly available online via GitHub. Questions related to demographic information can be completely anonymous such as name, age, occupation, level of physical activity, and disability status. The interview should take no longer then 45 minutes.
 
 Does the interviewer have your explicit consent to interview you?
 
 Interview 1: Yes
 
+Interview 2: Yes
+
+Interview 3: Yes
+
+Interview 4: Yes
+
 Is your participation in the interview voluntary?
 
 Interview 1: Yes
+
+Interview 2: Yes
+
+Interview 3: Yes
+
+Interview 4: Yes
 
 **Demographic information**
 
@@ -157,6 +169,222 @@ If it becomes a threat yes, I would change the way I live via self-care. The cha
 1.  Are you open to a follow-up interview?
 
 Yes.
+
+## Interview 2
+
+**Demographic information**
+
+1.  Name: Anonymous
+2.  Age: Anonymous
+3.  Occupation: Anonymous
+4.  Level of daily physical activity: Anonymous
+5.  Disability status (physical or mental): Anonymous
+
+**Fitbit usage**
+
+1.  Have you ever used a Fitbit before? If so, what was the experience?
+
+I have used a Fitbit before although the model is old but it still function. I have stopped using the Fitbit since the band gave me rashes. I thought the functions and features were good. I think the heart rate function is accurate but I doubt the sleep, water trackers, and calories are accurate. However, I think that it is good to know how long I have slept. I haven't used the alarm feature (since it's vibration is too small) Overall it was a good experience.
+
+2.  What were features of the Fitbit app did you enjoy?
+
+The breathing rate if it is accurate can be very useful but I doubt that it is accurate. However, it is an interesting feature. Step counter is nice and interesting but it is an overestimate. I don't know if it is inaccurate method of measuring my step due to my arms movement or my stride length.
+
+3.  Was there a time you have shown information from your Fitbit to a medical practitioner (i.e. doctor, physical therapist, etc.)? If so, why?
+
+I personally have not shown a doctor my data, but it might come up in my next doctor appointment since I have issues with sleeping.
+
+**Physical And Mental Health**
+
+1.  What is important to your physical health when you are in a stressful environment?
+
+Being able to walk or move around, sometimes I like to walk when I am stress and especially during exams. I don't have a way of letting lose. I guess I can't say being alone because you can't be alone. I prefer to move around a little bit or work through the issue myself.
+
+2.  Imagine you are 50% away from achieving your physical goals, what information would you need to achieve your physical goals?
+
+Body fat percentage would be nice. I don't know how you would do it with a watch but that statistic would be more useful then BMI.
+
+3.  Tell me about a time where you were motivated to stay physical throughout your day?
+
+I guess one time was during school. Sometime I get worked up and go to the gym. It makes me feel productive and it is like doing something that impacts the future and to me it is something that productivity can be related to.
+
+4.  Does counting the calories you burn matter to you? If so, how does a Fitbit device help you track the calories you burn?
+
+Where they do have the exercise feature, they do have an option for lifting weights. So, I put the length of the workout and although I do have trouble recording intensity. The feature is a good way of measuring my workout.
+
+5.  Was there ever a time where stress effected your sleeping pattern? If so, how did you correct your sleeping pattern?
+
+Stress is probably inhibiting my ability to fall asleep. Stress also contributes to how many times I wake up or quality of sleep during school. It can kinda led into a bad spiral where you don't get enough sleep and you get tired. I guess stress does have a big impact on sleep quality.
+
+6.  In what was do you keep yourself motivated to correct your sleep schedule when it effects you negatively?
+
+I guess it is the desire to not be miserable. I think not being tired helps me being more productive. If I am tired it is harder for me to understand lecture, mood, and productivity, when I am productive I have time to what I like. The motivation is productivity and more time to do what I like.
+
+7.  How do you define success when you have corrected your sleeping schedule?
+
+When I have consistent sleep for 2 weeks and the change in noticeable like more motivation and more energy in the afternoon.
+
+8.  If any, was there a time where you used physical indicators to assess your stress level (i.e. shortness of breath, fast heart rate or loss of appetite)? If so, how did you calm yourself down?
+
+I accutaly don't have many physical indicator of stress. Maybe a little weakness. If I am stressed out and I will eat something, that'll usually fix my stress levels.
+
+9.  Would you ever consider using sleep or heart rate as a method to gauge with your mental health?
+
+Yeah, I am not sure how heart rate measures mental health but sleeping does. Sleeping too much or too less would tell me about my mental health.
+
+10. Would knowing your heart rate impact your physical or mental health?
+
+I feel like it would impact my physical health since it is a measure of physical health. I'll probably use heart rate as a measure for physical health.
+
+**Follow-up interview**
+
+1.  Are you open to a follow-up interview?
+
+Yes. Though I am not currently using Fitbit.
+
+## Interview 3
+
+**Demographic information**
+
+1.  Name: Hayden Spector
+2.  Age: 20
+3.  Occupation: Student
+4.  Level of daily physical activity: Between not really active and moderately active
+5.  Disability status (physical or mental): Both physical and mental
+
+**Fitbit usage**
+
+1.  Have you ever used a Fitbit before? If so, what was the experience?
+
+Yes, I have used Fitbit a couple years back. Ironically I used it to track my personal fitness. After I didn't feel a need for it, I stopped using it. After becoming disabled I started to use my apple watch to track my health.
+
+2.  What were features of the Fitbit app did you enjoy?
+
+I kinda felt that being able to see my step versus my friend's steps were fun.
+
+3.  Was there a time you have shown information from your Fitbit to a medical practitioner (i.e. doctor, physical therapist, etc.)? If so, why?
+
+I have shown my heart rate date to my doctor. When I was still using Fitbit, there wasn't information of heart rate. The doctors I have shown my heart rate data referred me to a cardiologist.
+
+**Physical And Mental Health**
+
+1.  What is important to your physical health when you are in a stressful environment?
+
+Honestly, being able to eat or walk is the goal most of the time. Even though it is a low-bar, sometimes I can't do that.
+
+2.  Imagine you are 50% away from achieving your physical goals, what information would you need to achieve your physical goals?
+
+I feel like the probably is that my physical goal is related to my disability so there isn't a physical goal. There isn't a quantitative way of measuring my physical goal. I recently got knee braces which has been very helpful. Maybe tracking my heart rate would be useful but I have not done so in a while.
+
+3.  Tell me about a time where you were motivated to stay physical throughout your day?
+
+Last summer I was doing a lot of exercise and I had a gym membership.
+
+4.  Does counting the calories you burn matter to you? If so, how does a Fitbit device help you track the calories you burn?
+
+Honestly it doesn't really matter to me. Now I am at a health weight. In the past, it used to matter if I can eat enough to stay at a healthy weight.
+
+5.  Was there ever a time where stress effected your sleeping pattern? If so, how did you correct your sleeping pattern?
+
+Yeah especially during finals which effects my sleeping schedule. Honestly being able to come back home and not have finals helps my sleeping pattern. I also have a sleeping disorder.
+
+6.  In what was do you keep yourself motivated to correct your sleep schedule when it effects you negatively?
+
+Honestly I just get tired all the time, and I sleep enough one day that it resets or I take a nap. If it gets to a point where I can't function, then I will shut down completely.
+
+7.  How do you define success when you have corrected your sleeping schedule?
+
+I would sleeping normal hours at night and not feeling completely exhausted in the morning. Extra win if I don't want to take a nap in the afternoon.
+
+8.  If any, was there a time where you used physical indicators to assess your stress level (i.e. shortness of breath, fast heart rate or loss of appetite)? If so, how did you calm yourself down?
+
+I don't think I ever used Fitbit explicitly, but I have used some functions on the apple watch to help me breathe.
+
+9.  Would you ever consider using sleep or heart rate as a method to gauge with your mental health?
+
+I don't think I would since my heart rate and sleep is already messed up from other things since there are too many variables to measure my mental health with sleep and heart rate.
+
+10. Would knowing your heart rate impact your physical or mental health?
+
+I would say physical. As I said knowing my heart rate impacts my knowledge of my physical health since I can avoid fainting and hitting my end.
+
+**Follow-up interview**
+
+1.  Are you open to a follow-up interview?
+
+Yeah I will be fine with a follow-up interview.
+
+## interview 4
+
+**Demographic information**
+
+1.  Name: Anonymous
+2.  Age: Anonymous
+3.  Occupation: Anonymous
+4.  Level of daily physical activity: Anonymous
+5.  Disability status (physical or mental): Anonymous
+
+**Fitbit usage**
+
+1.  Have you ever used a Fitbit before? If so, what was the experience?
+
+Yes, I have used it before. If I had to give it a rating it would be 7/10, I don't think it was horrible but it did help me accomplish my goals and kept track of all of goals. It wasn't the most efficient and easily reliable device.
+
+2.  What were features of the Fitbit app did you enjoy?
+
+I really enjoyed how you could connect multiple Fitbit and show you how each model works. I don't remember too much. I remember it has all the basic features like step tracker. I would mainly use to the app to see if my device was connect. I don't have a reason to open up the app.
+
+3.  Was there a time you have shown information from your Fitbit to a medical practitioner (i.e. doctor, physical therapist, etc.)? If so, why?
+
+No I haven't.
+
+**Physical And Mental Health**
+
+1.  What is important to your physical health when you are in a stressful environment?
+
+When i am in a stressful environment is my water intake and my knowing my how many steps I taken which helps me in a stressful environment.
+
+2.  Imagine you are 50% away from achieving your physical goals, what information would you need to achieve your physical goals?
+
+I would like to have the same information I have when I was losing the first 50%. The basics like calories burned, water intake, how many steps I have been taking, and the duration of the workout. I dont' care a lot of about heart rate and other features.
+
+3.  Tell me about a time where you were motivated to stay physical throughout your day?
+
+I tend to be physical the most throughout my day when I have a good mindset. It is more about a mindset. I don't need a Fitbit or a gym to stay fit. If I have given motivate through words, I can get up and exercise.
+
+4.  Does counting the calories you burn matter to you? If so, how does a Fitbit device help you track the calories you burn?
+
+I do like keeping track of calories I have burned but I didn't see a function for it on the Fitbit I had.
+
+5.  Was there ever a time where stress effected your sleeping pattern? If so, how did you correct your sleeping pattern?
+
+Yes, there has been. The way I corrected it was pull an all-nighter and reset it the next day.
+
+6.  In what ways do you keep yourself motivated to correct your sleep schedule when it effects you negatively?
+
+My motivation to correct my sleeping schedule is when it effect my physical and mental health. To keep myself intake, I will correct my sleeping schedule.
+
+7.  How do you define success when you have corrected your sleeping schedule?
+
+Just getting 8 hours of sleeping throughout the night at least. That is perfect for me. If I can wake up before 12:00 pm and go to bed before 4:00 am, my sleeping schedule would be perfect for me.
+
+8.  If any, was there a time where you used physical indicators to assess your stress level (i.e. shortness of breath, fast heart rate or loss of appetite)? If so, how did you calm yourself down?
+
+The physical things that helped me realize I have stress is acne, and loss of sleep. It was more so a mindset. I think for myself it was easier to calm myself down by talking to myself.
+
+9.  Would you ever consider using sleep or heart rate as a method to gauge with your mental health?
+
+Yeah, I would use sleep to gauge with my sleep. Sleep is part of my mental health. Heart rate is unpredictable so no.
+
+10. Would knowing your heart rate impact your physical or mental health?
+
+It would make me hyper-aware of situation so I would not like to use heart rate. I only need to look at my heart rate while working out. Knowing my heart rate 24/7 is not helpful.
+
+# **Follow-up interview**
+
+1.  Are you open to a follow-up interview?
+
+Yeah.
 
 # Work Citation (MLA 8)
 
