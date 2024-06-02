@@ -40,6 +40,8 @@ Interview 3: Yes
 
 Interview 4: Yes
 
+Interview 5: Yes
+
 Is your participation in the interview voluntary?
 
 Interview 1: Yes
@@ -49,6 +51,8 @@ Interview 2: Yes
 Interview 3: Yes
 
 Interview 4: Yes
+
+Interview 5: Yes
 
 **Demographic information**
 
@@ -380,11 +384,83 @@ Yeah, I would use sleep to gauge with my sleep. Sleep is part of my mental healt
 
 It would make me hyper-aware of situation so I would not like to use heart rate. I only need to look at my heart rate while working out. Knowing my heart rate 24/7 is not helpful.
 
-# **Follow-up interview**
+**Follow-up interview**
 
 1.  Are you open to a follow-up interview?
 
 Yeah.
+
+## Interview 5
+
+**Demographic information**
+
+1.  Name: Anonymous
+2.  Age: Anonymous
+3.  Occupation: Anonymous
+4.  Level of daily physical activity: Anonymous
+5.  Disability status (physical or mental): Anonymous
+
+**Fitbit usage**
+
+1.  Have you ever used a Fitbit before? If so, what was the experience?
+
+I used one for maybe 5 years and 2 or possibly 3 different variation. The experience is pretty grant. I used it for running and alarm setting with my Fitbit.
+
+2.  What were features of the Fitbit app did you enjoy?
+
+It is nice having all the stats in one place and I don't have to click around and find everything. Since the update, things are difficult to find.
+
+3.  Was there a time you have shown information from your Fitbit to a medical practitioner (i.e. doctor, physical therapist, etc.)? If so, why?
+
+I have not.
+
+**Physical And Mental Health**
+
+1.  What is important to your physical health when you are in a stressful environment?
+
+Getting good exercise and staying hydrate.
+
+2.  Imagine you are 50% away from achieving your physical goals, what information would you need to achieve your physical goals?
+
+Thinking really specifically, just keeping track of everything. If we were talking about running, I would track steps, mileage, etc.
+
+3.  Tell me about a time where you were motivated to stay physical throughout your day?
+
+It is not very difficult to stay motivated when I am with someone to run. Fitbit has a feature where they notify you on how many steps you need. It motivates me during the weekend to walk.
+
+4.  Does counting the calories you burn matter to you? If so, how does a Fitbit device help you track the calories you burn?
+
+No counting calories does not matter to me. It does not. I do not use that feature.
+
+5.  Was there ever a time where stress effected your sleeping pattern? If so, how did you correct your sleeping pattern?
+
+Many times, and I just waited until the stressful period was over.
+
+6.  In what ways do you keep yourself motivated to correct your sleep schedule when it effects you negatively?
+
+I think being effected negatively is a motivation t correct my sleeping schedule to sleep more.
+
+7.  How do you define success when you have corrected your sleeping schedule?
+
+When I can tell I have slept around 8 or more hours and when I am not tired after waking up.
+
+8.  If any, was there a time where you used physical indicators to assess your stress level (i.e. shortness of breath, fast heart rate or loss of appetite)? If so, how did you calm yourself down?
+
+Not any of the physical attributes mentioned. I don't use anything to calm myself down so no.
+
+9.  Would you ever consider using sleep or heart rate as a method to gauge with your mental health?
+
+I would say sleep and yes.
+
+10. Would knowing your heart rate impact your physical or mental health?
+
+Physical I guess because I can see my heart rate when I am running to see if it was a good run.
+
+**Follow-up interview**
+
+1.  Are you open to a follow-up interview?
+
+Yeah if I am in town.
 
 # Work Citation (MLA 8)
 
