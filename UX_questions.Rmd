@@ -338,11 +338,11 @@ No I haven't.
 
 1.  What is important to your physical health when you are in a stressful environment?
 
-When i am in a stressful environment is my water intake and my knowing my how many steps I taken which helps me in a stressful environment.
+When i am in a stressful environment what is important is my water intake and my knowing my how many steps I taken which helps me in a stressful environment.
 
 2.  Imagine you are 50% away from achieving your physical goals, what information would you need to achieve your physical goals?
 
-I would like to have the same information I have when I was losing the first 50%. The basics like calories burned, water intake, how many steps I have been taking, and the duration of the workout. I dont' care a lot of about heart rate and other features.
+I would like to have the same information I have when I was losing the first 50%. The basics like calories burned, water intake, how many steps I have been taking, and the duration of the workout. I don't' care a lot of about heart rate and other features.
 
 3.  Tell me about a time where you were motivated to stay physical throughout your day?
 
@@ -358,7 +358,7 @@ Yes, there has been. The way I corrected it was pull an all-nighter and reset it
 
 6.  In what ways do you keep yourself motivated to correct your sleep schedule when it effects you negatively?
 
-My motivation to correct my sleeping schedule is when it effect my physical and mental health. To keep myself intake, I will correct my sleeping schedule.
+My motivation to correct my sleeping schedule is when it effect my physical and mental health. To keep myself incheck, I will correct my sleeping schedule.
 
 7.  How do you define success when you have corrected your sleeping schedule?
 
@@ -430,7 +430,7 @@ Many times, and I just waited until the stressful period was over.
 
 6.  In what ways do you keep yourself motivated to correct your sleep schedule when it effects you negatively?
 
-I think being effected negatively is a motivation t correct my sleeping schedule to sleep more.
+I think being effected negatively is a motivation to correct my sleeping schedule to sleep more.
 
 7.  How do you define success when you have corrected your sleeping schedule?
 
@@ -453,6 +453,42 @@ Physical I guess because I can see my heart rate when I am running to see if it 
 1.  Are you open to a follow-up interview?
 
 Yeah if I am in town.
+
+# Big Takeaways From The Interviews
+
+The interviewees has not used fitbit or related devices currently. However, interviewees have used such devices either during high school or for an extended period of time (i.e. 5 years). Most users have positive experiences with the device as some statistics were believed to be more accurate when compared to others which helped some interviewees achieved their goals of improving their mental, physical and overall health.
+
+Features such as step counter and heart rate were useful with some caveats. Step counter did not take stride length and arm movement into consideration; heart rate were inaccurate to some interviewees. Most interviewees enjoyed the feature that allowed them to compare themselves with their friends.
+
+It is important to note that only one interviewee who is physically disabled has shown her device to a cardiologist. She only showed her heart rate information.
+
+In a stressful environment majority of the interviewees resolve or reduce their stress levels with the following methods:
+
+1.  Doing phyisocal activities (i.e. walking)
+2.  Doodling
+3.  Eating
+4.  Listening to music
+5.  Monitoring Water Intake
+6.  Working the resolve the source of the stress itself
+
+To stay motivated throughout a stressful time or environment, majority of the interviewee agreed that friends, athletic club or going to the gym helps them stay motivated. Mentally, interviewees remain motivated by staying consistent, being in the right mindset (words of affirmation), or being productive with their time. Outside of external and internal motivation, knowing and tracking their calories, water intake, steps, and duration of workout has helped them stay motivated.
+
+Interviewees found that bad sleeping pattern occurs from stress before a test or final, anxiety, excitement, or being trapped in a bad sleeping pattern. Stress does inhibit sleep since stress contributes to the number of times interviewees wake up at night, and effects the quality of the sleep which can quickly become a negative cycle where stress causes bad sleeping patterns but bad sleeping patterns can cause stress. Interviewees find motivation to fix bad sleeping schedule interviewees by staying motivated with the desire to not feel mesirable, focus on productivity to have free time, or acknowledge the negative effects of bad sleeping schedule. Interviewees define a successful sleep schedule or pattern with constant sleep for a minimum 2 weeks, a sleeping schedule of 7-8 hours, more energy in the afternoon, not feeling exhausted, and no need for naps.
+
+For the interviewee with a sleeping disorder, she fix her sleeping schedule by sleeping enough for one day. "Enough sleep" is subjective thus there is not a quantity for "enough sleep".
+
+The physical indicators of stress that more interviewees found to indicate stress are listed below:
+
+1.  Acne
+2.  Fidgeting
+3.  Loss of Sleep
+4.  Overall Physical Weakness
+5.  Not being able to sit still
+6.  Procrastination
+7.  Snacking
+8.  Touching their own hair
+
+Interviewee had mix of positive and negative responses for how sleep and heart rate are indicators for mental health. Mostly interviewees agreed that heart rate is a good indicator for physical health. The interviewee who is physically disabled stated that heart rate would be a good measurement to avoid fainting and being physically injured as a consequence.
 
 # Work Citation (MLA 8)
 
