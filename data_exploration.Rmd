@@ -34,7 +34,7 @@ weight_Log <- read.csv("Fitabase_Data_3.12.16-4.11.16/weightLogInfo_merged.csv")
 # daily_act
 nrow_daily_act <- nrow(daily_act)
 ncol_daily_act <- ncol(daily_act)
-uniqueId_daily_act <- length(unique(daily_act$Id))
+uniqueId_daily_act <- n_distinct(daily_act$Id)
 # heartrate_sec
 nrow_heartrate_sec <- nrow(heartrate_sec)
 ncol_heartrate_sec <- ncol(heartrate_sec)
@@ -77,6 +77,12 @@ ncol_weight_Log <- ncol(weight_Log)
 uniqueId_weight_Log <- length(unique(weight_Log$Id))
 ```
 
+# Background Information
+
+The data sets found in this git repo comes from Kaggle ([FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit?resource=download)). In the Kaggle post, the data set comes from a survey via Amazon Mechanical Turk between 03/12/2016 to 05/12/2026. The entry of each data from the users were recorded between early March to early April.
+
+# Rows, Columns, and Users In Each Dataset
+
 The following are number of rows and columns present in the data sets found in "Fitabase_Data_3.12.16-4.11.16" folder.
 
 1.  In the data set, dailyAcvivity_merged.csv there are `r nrow_daily_act` rows, `r ncol_daily_act` columns, and `r uniqueId_daily_act` unique users.
@@ -101,22 +107,63 @@ The following are number of rows and columns present in the data sets found in "
 
 11. In the data set, weightLogInfo_merged.csv there are `r nrow_weight_Log` rows, `r ncol_weight_Log` columns, and `r uniqueId_weight_Log` unique users.
 
-```{r visual-one}
+# Data Visualization Of Each Dataset
 
-head(daily_act)
+## Daily Activity Dataset
 
-data_dailySteps <- daily_act |>
-  group_by(Id, ActivityDate) |>
-  filter(Id == 1503960366) |>
-  summarise(steps_per_day = sum(TotalSteps))
+Dataset columns
 
-data_dailySteps |>
-  ggplot(aes(x = ActivityDate, y = steps_per_day)) +
-  geom_line(aes(group = 1)) +
-  geom_point() +
-  labs(title = "Steps Between March 25th to April 9th",
-      x = "Date (March 25th to April 9th)",
-      y = "Steps") +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+-   id: User id
+
+-   Activity Date: Date of Activity
+
+-   TotalSteps: Total steps taken for the duration of the activity
+
+-   TotalDistance: Total distance traveled for the duration of the activities. The units recorded are in miles could either be in kilometers or miles depending on which option an user chose. The distance recorded in this column comes from a GPS, manual input from the user, or third party apps.
+
+-   TrackerDistance: Total distance traveled recorded by a tracker. The units recorded are in miles could either be in kilometers or miles depending on which option an user chose. The distance recorded in this column comes from the device and not from a GPS, manual input from the user or third party apps.
+
+-   LoggedActivitiesDistance: Logged actitvites distance refers to distance users manually logged into the device.
+
+-   VeryActiveDistance: Very Active distance refers to distance that the device classifies the physical activity as high intensity based on device's proprietary algorithm.
+
+-   ModeratelyActiveDistance: Moderately Active distance refers to distance that the device classifies the physical activity as moderate intensity based on device's proprietary algorithm.
+
+-   LightActiveDistance: Light Active distance refers to distance that the device classifies as "light active" based on device's proprietary algorithm.
+
+-   SedentaryActiveDistance: Sedentary active distance refers to the distance when the user is not considered "active" by the device's propitiatory algorithm.
+
+-   VeryActiveMinutes: Very Active minutes refers to the time (recorded in minutes) that the device classifies the physical activity as high intensity based on device's proprietary algorithm.
+
+-   ModeratelyActiveMinutes: Moderately Active minutes refers to the time (recorded in minutes) that the device classifies the physical activity as moderate intensity based on device's proprietary algorithm.
+
+-   LightActiveMinutes: Light Active minutes refers to the time (recorded in minutes) that the device classifies as "light active" based on device's proprietary algorithm.
+
+-   SedentaryMinutes: Sedentary active minutes refers to the time (recorded in minutes) when the user is not considered "active" by the device's propitiatory algorithm.
+
+-   Calories: Calories is the calories burned during the time which the activity took place.
+
+```{r daily-act-first-five-rows}
+# printing the first five rows
+head(daily_act, 5)
 ```
+
+```{r histogram-daily-act}
+# Creating the histograms
+hist(daily_act$TotalSteps, main = "Histogram of Total Steps", xlab = "Total Steps Taken")
+hist(daily_act$TotalDistance, main = "Histogram of Total Distance", xlab = "Total Distance")
+hist(daily_act$TrackerDistance, main = "Histogram of Tracker Distance", xlab = "Tracker Distance")
+hist(daily_act$LoggedActivitiesDistance, main = "Histogram of Logged Activities Distance", xlab = "Logged Activities Distance")
+hist(daily_act$VeryActiveDistance, main = "Histogram of Very Active Distance", xlab = "Very Active Distance")
+hist(daily_act$ModeratelyActiveDistance, main = "Histogram of Moderately Active Distance", xlab = "Moderately Active Distance")
+hist(daily_act$LightActiveDistance, main = "Histogram of Light Active Distance", xlab = "Light Active Distance")
+hist(daily_act$SedentaryActiveDistance, main = "Histogram of Sedentary Active Distance", xlab = "Sedentary Active Distance")
+hist(daily_act$VeryActiveMinutes, main = "Histogram of Very Active Minutes", xlab = "Very Active Minutes")
+hist(daily_act$FairlyActiveMinutes, main = "Histogram of Fairly Active Minutes", xlab = "Fairly Active Minutes")
+hist(daily_act$LightlyActiveMinutes, main = "Histogram of Lightly Active Minutes", xlab = "Lightly Active Minutes")
+hist(daily_act$SedentaryMinutes, main = "Histogram of Sedentary Minutes", xlab = "Sedentary Minutes")
+hist(daily_act$Calories, main = "Histogram of Calories", xlab = "Calories")
+
+```
+
+Majority of the histogram has a skewness towards the left-hand side or the right-hand side. In context, the skewness of all histogram aside from calories make sense since each user may have different amount of entries per day and each user's physical activity may vary from each other. For instance, two users on the same day can run different distances. If these distances were extreme then skewness should occur. The histogram for calories (by inspection) forms a distribution that resembles a normal distribution.

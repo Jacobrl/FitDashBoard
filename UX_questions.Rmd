@@ -2,6 +2,7 @@
 title: "User Interview"
 output: pdf_document
 date: "2024-05-29"
+author: "Jacob Levin"
 ---
 
 # What is a Fitbit?
