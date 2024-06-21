@@ -111,8 +111,6 @@ The following are number of rows and columns present in the data sets found in "
 
 ## Daily Activity Dataset
 
-Dataset columns
-
 -   id: User id
 
 -   Activity Date: Date of Activity
@@ -150,20 +148,40 @@ head(daily_act, 5)
 
 ```{r histogram-daily-act}
 # Creating the histograms
-hist(daily_act$TotalSteps, main = "Histogram of Total Steps", xlab = "Total Steps Taken")
-hist(daily_act$TotalDistance, main = "Histogram of Total Distance", xlab = "Total Distance")
-hist(daily_act$TrackerDistance, main = "Histogram of Tracker Distance", xlab = "Tracker Distance")
-hist(daily_act$LoggedActivitiesDistance, main = "Histogram of Logged Activities Distance", xlab = "Logged Activities Distance")
-hist(daily_act$VeryActiveDistance, main = "Histogram of Very Active Distance", xlab = "Very Active Distance")
-hist(daily_act$ModeratelyActiveDistance, main = "Histogram of Moderately Active Distance", xlab = "Moderately Active Distance")
-hist(daily_act$LightActiveDistance, main = "Histogram of Light Active Distance", xlab = "Light Active Distance")
-hist(daily_act$SedentaryActiveDistance, main = "Histogram of Sedentary Active Distance", xlab = "Sedentary Active Distance")
-hist(daily_act$VeryActiveMinutes, main = "Histogram of Very Active Minutes", xlab = "Very Active Minutes")
-hist(daily_act$FairlyActiveMinutes, main = "Histogram of Fairly Active Minutes", xlab = "Fairly Active Minutes")
-hist(daily_act$LightlyActiveMinutes, main = "Histogram of Lightly Active Minutes", xlab = "Lightly Active Minutes")
-hist(daily_act$SedentaryMinutes, main = "Histogram of Sedentary Minutes", xlab = "Sedentary Minutes")
-hist(daily_act$Calories, main = "Histogram of Calories", xlab = "Calories")
+hist(daily_act$TotalSteps, main = "Histogram of Total Steps", xlab = "Total Steps Taken (Regardless of User Id)")
+hist(daily_act$TotalDistance, main = "Histogram of Total Distance", xlab = "Total Distance (Regardless of User Id)")
+hist(daily_act$TrackerDistance, main = "Histogram of Tracker Distance", xlab = "Tracker Distance (Regardless of User Id)")
+hist(daily_act$LoggedActivitiesDistance, main = "Histogram of Logged Activities Distance", xlab = "Logged Activities Distance (Regardless of User Id)")
+hist(daily_act$VeryActiveDistance, main = "Histogram of Very Active Distance", xlab = "Very Active Distance (Regardless of User Id)")
+hist(daily_act$ModeratelyActiveDistance, main = "Histogram of Moderately Active Distance", xlab = "Moderately Active Distance (Regardless of User Id)")
+hist(daily_act$LightActiveDistance, main = "Histogram of Light Active Distance", xlab = "Light Active Distance (Regardless of User Id)")
+hist(daily_act$SedentaryActiveDistance, main = "Histogram of Sedentary Active Distance", xlab = "Sedentary Active Distance (Regardless of User Id)")
+hist(daily_act$VeryActiveMinutes, main = "Histogram of Very Active Minutes", xlab = "Very Active Minutes (Regardless of User Id)")
+hist(daily_act$FairlyActiveMinutes, main = "Histogram of Fairly Active Minutes", xlab = "Fairly Active Minutes (Regardless of User Id)")
+hist(daily_act$LightlyActiveMinutes, main = "Histogram of Lightly Active Minutes", xlab = "Lightly Active Minutes (Regardless of User Id)")
+hist(daily_act$SedentaryMinutes, main = "Histogram of Sedentary Minutes", xlab = "Sedentary Minutes (Regardless of User Id)")
+hist(daily_act$Calories, main = "Histogram of Calories", xlab = "Calories (Regardless of User Id)")
 
 ```
 
 Majority of the histogram has a skewness towards the left-hand side or the right-hand side. In context, the skewness of all histogram aside from calories make sense since each user may have different amount of entries per day and each user's physical activity may vary from each other. For instance, two users on the same day can run different distances. If these distances were extreme then skewness should occur. The histogram for calories (by inspection) forms a distribution that resembles a normal distribution.
+
+## Heart Rate Seconds 
+
+-   id: User id
+
+-   Time: Date and time stamp
+
+-   Value: Heart beat per 5 seconds recorded by the device
+
+```{r heartrate-seconds-first-five-rows}
+# printing the first five rows
+head(heartrate_sec, 5)
+```
+
+```{r histogram-heartrate-seconds}
+# Creating the histograms
+hist(heartrate_sec$Value, main = "Histogram of Heart Rate (In Seconds)", xlab = "Total Heart Rate (Regardless of User Id)")
+```
+
+In the histogram for heart rate, the histogram users heart rate has a left skew. Indicating that a majority of the heart rate is lower and closer to resting heart rate of 60-100 bpm ([What's a normal resting heart rate?](https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979#:~:text=A%20normal%20resting%20heart%20rate%20for%20adults%20ranges%20from%2060,to%2040%20beats%20per%20minute.)).
