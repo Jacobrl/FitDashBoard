@@ -184,7 +184,7 @@ head(heartrate_sec, 5)
 hist(heartrate_sec$Value, main = "Histogram of Heart Rate (In Seconds)", xlab = "Total Heart Rate (Regardless of User Id)")
 ```
 
-In the histogram for heart rate, the histogram users heart rate has a left skew. Indicating that a majority of the heart rate is lower and closer to resting heart rate of 60-100 bpm ([What's a normal resting heart rate?](https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979#:~:text=A%20normal%20resting%20heart%20rate%20for%20adults%20ranges%20from%2060,to%2040%20beats%20per%20minute.)).
+In the histogram for heart rate, the histogram users heart rate has a left skew. Indicating that a majority of the heart rate is lower and closer to resting heart rate of 60-100 bpm ([What's a normal resting heart rate?](https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979#:~:text=A%20normal%20resting%20heart%20rate%20for%20adults%20ranges%20from%2060,to%2040%20beats%20per%20minute.)). The skewness could imply that the users may not have an active lifestyle which raises their heart rate during the time recorded. The users of the data set may be relatively healthy based on their heart rate.
 
 ## Hourly Calories
 
@@ -201,5 +201,49 @@ head(hourly_Cal, 5)
 
 ```{r histogram-hourly-calories}
 # Creating the histograms
-hist(heartrate_sec$Value, main = "Histogram of Heart Rate (In Seconds)", xlab = "Total Heart Rate (Regardless of User Id)")
+hist(hourly_Cal$Calories, main = "Histogram of Calories", xlab = "Total Calories (Regardless of User Id)")
 ```
+
+In the histogram for calories burned every hour, the histogram users heart rate has a left skew. The left skew could indicate that the users recorded in the data set do not burn large about of calories per hour. The other implication would be that the users in the data set may not live an extremely active lifestyle where they are burning a lot of calories per hour.
+
+## Hourly Intensities
+
+-   id: User id
+
+-   ActivityHour: Date and time stamp per hour
+
+-   TotalIntensity: Intensity during a recorded hour
+
+-   AverageIntensity: Average Intensity over a recorded period of time
+
+```{r hourly-intensities-first-five-rows}
+# printing the first five rows
+head(hourly_Int, 5)
+```
+
+```{r histogram-hourly-itensity}
+# Creating the histograms
+hist(hourly_Int$TotalIntensity, main = "Histogram of Total Intensity", xlab = "Total Intensity (Regardless of User Id)")
+hist(hourly_Int$AverageIntensity, main = "Histogram of Average Itensity", xlab = "Total of Average Itensity (Regardless of User Id)")
+```
+
+Both histogram of total intensity and average intensity exhibit a similar left skew. The similarity comes from the type of skewness and the bins majority of the data. The potential implication are that the users may not participate in activities that are intense, relative to their body and physical health, resulting in a similar left skew.
+
+## Hourly Steps
+
+-   id: User id
+
+-   ActivityHour: Date and time stamp per hour
+
+-   StepTotal: Step count per hour
+
+```{r hourly-steps-first-five-rows}
+# printing the first five rows
+head(hourly_Step, 5)
+```
+
+```{r histogram-hourly-steps}
+hist(hourly_Step$StepTotal, main = "Histogram of Step Per Hour", xlab = "Total Step Count (Regardless of User Id)")
+```
+
+In the histogram for step count per hour, the graph has a left skew. The skewness in the data set may indicate that the majority of the users in the data set do not walk often.
