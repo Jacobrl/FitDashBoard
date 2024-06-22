@@ -185,3 +185,21 @@ hist(heartrate_sec$Value, main = "Histogram of Heart Rate (In Seconds)", xlab = 
 ```
 
 In the histogram for heart rate, the histogram users heart rate has a left skew. Indicating that a majority of the heart rate is lower and closer to resting heart rate of 60-100 bpm ([What's a normal resting heart rate?](https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979#:~:text=A%20normal%20resting%20heart%20rate%20for%20adults%20ranges%20from%2060,to%2040%20beats%20per%20minute.)).
+
+## Hourly Calories
+
+-   id: User id
+
+-   Time: Date and time stamp
+
+-   Calories: Calories burned per hour
+
+```{r hourly-calories-first-five-rows}
+# printing the first five rows
+head(hourly_Cal, 5)
+```
+
+```{r histogram-hourly-calories}
+# Creating the histograms
+hist(heartrate_sec$Value, main = "Histogram of Heart Rate (In Seconds)", xlab = "Total Heart Rate (Regardless of User Id)")
+```
