@@ -166,7 +166,7 @@ hist(daily_act$Calories, main = "Histogram of Calories", xlab = "Calories (Regar
 
 Majority of the histogram has a skewness towards the left-hand side or the right-hand side. In context, the skewness of all histogram aside from calories make sense since each user may have different amount of entries per day and each user's physical activity may vary from each other. For instance, two users on the same day can run different distances. If these distances were extreme then skewness should occur. The histogram for calories (by inspection) forms a distribution that resembles a normal distribution.
 
-## Heart Rate Seconds 
+## Heart Rate Seconds
 
 -   id: User id
 
@@ -201,7 +201,7 @@ head(hourly_Cal, 5)
 
 ```{r histogram-hourly-calories}
 # Creating the histograms
-hist(hourly_Cal$Calories, main = "Histogram of Calories", xlab = "Total Calories (Regardless of User Id)")
+hist(hourly_Cal$Calories, main = "Histogram of Calories Per Hours", xlab = "Total Calories (Regardless of User Id)")
 ```
 
 In the histogram for calories burned every hour, the histogram users heart rate has a left skew. The left skew could indicate that the users recorded in the data set do not burn large about of calories per hour. The other implication would be that the users in the data set may not live an extremely active lifestyle where they are burning a lot of calories per hour.
@@ -223,8 +223,8 @@ head(hourly_Int, 5)
 
 ```{r histogram-hourly-itensity}
 # Creating the histograms
-hist(hourly_Int$TotalIntensity, main = "Histogram of Total Intensity", xlab = "Total Intensity (Regardless of User Id)")
-hist(hourly_Int$AverageIntensity, main = "Histogram of Average Itensity", xlab = "Total of Average Itensity (Regardless of User Id)")
+hist(hourly_Int$TotalIntensity, main = "Histogram of Total Intensity Per Hours", xlab = "Total Intensity (Regardless of User Id)")
+hist(hourly_Int$AverageIntensity, main = "Histogram of Average Itensity Per Hours", xlab = "Total of Average Itensity (Regardless of User Id)")
 ```
 
 Both histogram of total intensity and average intensity exhibit a similar left skew. The similarity comes from the type of skewness and the bins majority of the data. The potential implication are that the users may not participate in activities that are intense, relative to their body and physical health, resulting in a similar left skew.
@@ -243,7 +243,121 @@ head(hourly_Step, 5)
 ```
 
 ```{r histogram-hourly-steps}
+# Creating the histograms
 hist(hourly_Step$StepTotal, main = "Histogram of Step Per Hour", xlab = "Total Step Count (Regardless of User Id)")
 ```
 
 In the histogram for step count per hour, the graph has a left skew. The skewness in the data set may indicate that the majority of the users in the data set do not walk often.
+
+## Minute Calories Narrow
+
+-   id: User id
+
+-   ActivityMinute: Date and time stamp per minute
+
+-   Calories: Calories burned per minutes
+
+```{r minute-calories-narrow-first-five-rows}
+# printing the first five rows
+head(min_Cal, 5)
+```
+
+```{r histogram-minute-calories-narrow}
+# Creating the histograms
+hist(min_Cal$Calories, main = "Histogram of Calories Per Minutes", xlab = "Total Calories (Regardless of User Id)")
+```
+
+In the histogram for calories burned every minutes, the histogram users heart rate has a left skew. The left skew could indicate that the users recorded in the data set do not burn large about of calories per hour. The other implication would be that the users in the data set may not live an extremely active lifestyle where they are burning a lot of calories per hour.
+
+## Minute Intensities Narrow
+
+-   Id: User id
+
+-   ActivityMiute: Date and time stamp per minute
+
+-   Intensity: Intensity during a record every minute
+
+```{r minute-calories-narrow-first-five-rows}
+# printing the first five rows
+head(min_Int, 5)
+```
+
+```{r histogram-minute-calories-narrow}
+# Creating the histograms
+hist(min_Int$, main = "Histogram of Intensity Per Minutes", xlab = "Total Intensity (Regardless of User Id)")
+```
+
+In the histogram for intensity recorded every minute, the graph presented no skewness. It is interesting that the majority of the data point falls under 4 bins.
+
+## Minute METs Narrow
+
+-   Id: User id
+
+-   ActivityMiute: Date and time stamp per minute
+
+-   METs: Metabolic Equivalent of Task
+
+```{r minute-METs-Narrow-first-five-rows}
+# prinitng the first five rows
+head(min_METs, 5)
+```
+
+```{r histogram-minute-METs-Narrow}
+# Creating the histograms
+hist(min_METs$METs, main = "Histogram of METs Per Minutes", xlab = "Total METs (Regardless of User Id)")
+```
+
+In the histogram for METs, the graph has left skew. The skewness of the data implies that the ration between a user's working metabolic rate relative to their resting metabolic rate is low. The low ratio may indicate that the user's were not physically active every minute recorded by their device.
+
+## Minutes Sleep Narrow
+
+-   Id: User id
+
+-   date: Date and time stamp recorded every minute
+
+-   value: Specific data related to a sleep event
+
+-   LogId: Unique identifier for each sleep entry
+
+```{r minute-sleep-Narrow-first-five-rows}
+# prinitng the first five rows
+head(min_Sleep, 5)
+```
+
+```{r barplot-minute-sleep-Narrow}
+# Creating the barplots
+ggplot(min_Sleep, aes(x=value, y=value)) + 
+  geom_bar(stat = "identity") +
+  labs(title = "Barplot of Sleep Related Events",
+       x = "Values",
+       y = "Count of Sleep Related Events") +
+  theme_bw()
+```
+
+In the bar plot for Minutes Sleep Narrow, majority of the data point falls under sleep event one.
+
+## Minute Steps Narrow
+
+-   Id: User id
+
+-   ActivityMinute: Date and time stamp in per minute
+
+-   Steps: Step count per minute
+
+```{r minute-steps-narrow-first-five-rows}
+# printing out the first five rows
+head(min_Step, 5)
+```
+
+```{r histogram-minute-steps-narrows}
+# Creating the histogram
+hist(min_Step$Steps, main = "Histogram of Step Count Per Minutes", xlab = "Total Step Count (Regardless of User Id)")
+```
+
+In the histogram for total step count per minute, the graph has a left skew. The skewness may indicate that the users were not actively walking or taking steps every minute.
+
+## Weight Log Info
+
+```{r}
+head(weight_Log, 5)
+```
