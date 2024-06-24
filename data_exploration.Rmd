@@ -358,6 +358,64 @@ In the histogram for total step count per minute, the graph has a left skew. The
 
 ## Weight Log Info
 
-```{r}
+-   Id: User id
+
+-   Date: Date and time stamp at the time the data was recorded
+
+-   WeightKg: Weight of the user at the item recorded in kilograms
+
+-   WeightPounds: Weight of the user at the time recorded in pounds
+
+-   Fat: Body fat percent of the user at the time recorded
+
+-   BMI: Body mass index of the user at the time recorded
+
+-   IsManualReport: A column boolean value (true or false) as it's individual data entry to signify whether the data logged into the device is manually logged by the user or not.
+
+-   LogId: Unique identifier for each data entry
+
+```{r weight-Log-Info-first-five-rows}
+# printing out the first five rows
 head(weight_Log, 5)
 ```
+
+```{r graphs-of-weight-log-info}
+# Creating the histogram
+hist(weight_Log$WeightKg, 
+     main = "Histogram of Weight in Kilograms", 
+     xlab = "Weight (Kg)", 
+     ylab = "Frequency")
+
+hist(weight_Log$WeightPounds, 
+     main = "Histogram of Weight in Pounds", 
+     xlab = "Weight (Pounds)", 
+     ylab = "Frequency")
+
+hist(weight_Log$Fat, 
+     main = "Histogram of Fat Percentage", 
+     xlab = "Fat (%)", 
+     ylab = "Frequency")
+
+hist(weight_Log$BMI, 
+     main = "Histogram of BMI", 
+     xlab = "BMI", 
+     ylab = "Frequency")
+# Summarize the count of TRUE and FALSE values in IsManualReport
+weight_summary <- weight_Log %>%
+  group_by(IsManualReport) %>%
+  summarise(count = n())
+max_bool <- max(weight_summary$count)
+# Creating the barplots
+ggplot(weight_summary, aes(x = IsManualReport, y = count)) + 
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = count), vjust = -0.5) +
+  labs(title = "Barplot of Manual Data For Weights",
+       x = "Is Manual Report (True or False)",
+       y = "Count of Manual Reports") +
+  ylim(0, max_bool * 1.1) +
+  theme_bw()
+```
+
+The histograms for weights in kilograms, weights in pounds, and BMI have a left skew. The skewness int he three graphs may indicate that the majority of the users in the data set have similar physical and bodily health. The histogram for fat percentage has exhibit a binary split since majority of the data points fall within 10-15% or 20-25% body fat. The cause of the binary split may come from the lack of observations for user's fat percentage.
+
+The bar plot for manual data entry in the data set indicate that majority of the users like to manually log in their weight.
